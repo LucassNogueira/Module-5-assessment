@@ -30,7 +30,7 @@ module.exports = {
                 country_id int REFERENCES countries(country_id)
                 );
 
-            INSERT INTO cities (name, rating, country_id) VALUES ('austin', 5, 7 );
+      
 
 
 
