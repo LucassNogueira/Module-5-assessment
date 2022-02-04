@@ -5,7 +5,7 @@ def sales_reports(log_file): #here we are defining a function that is taking in 
     for line in log_file:   #here we are looping over every line in the file
         line = line.rstrip() #rstrip removes the trailing whitespace from the line 
         day = line[0:3] #this is slice notation starting from index 0 we want the information until we reach index 3
-        if day == "Tue":   #here we are checking if the day is equal to the string "Tue"
+        if day == "Mon":   #here we are checking if the day is equal to the string "Tue"
             print(line) #we are printing out the line if all needs met
 
 
