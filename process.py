@@ -9,4 +9,14 @@ def sales_reports(log_file): #here we are defining a function that is taking in 
             print(line) #we are printing out the line if all needs met
 
 
-sales_reports(log_file) #invoking the function we just defined above with the data we passed from the file
+# sales_reports(log_file) #invoking the function we just defined above with the data we passed from the file
+
+
+def over_ten(log_file):
+    for line in log_file:
+        line=line.split()
+        if int(line[2]) > 10:
+            print(line)
+
+
+over_ten(log_file) 
